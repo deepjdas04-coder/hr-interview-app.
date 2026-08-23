@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HR Interview WhatsApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>HR Interview WhatsApp</h1>
+    <p class="subtitle">Interview invitation manager</p>
+
+    <div class="card">
+      <input id="name" type="text" placeholder="Candidate Name">
+
+      <input id="phone" type="tel" placeholder="WhatsApp Number (e.g. 919876543210)">
+
+      <input id="position" type="text" placeholder="Position (e.g. Sales Associate)">
+
+      <input id="store" type="text" placeholder="Store Name">
+
+      <label>Interview Date</label>
+      <input id="date" type="date">
+
+      <label>Interview Time</label>
+      <input id="time" type="time">
+
+      <textarea id="customMessage"
+        placeholder="Optional: add any additional message"></textarea>
+
+      <button onclick="sendWhatsApp()">
+        🟢 Send Interview WhatsApp
+      </button>
+    </div>
+
+    <div class="card">
+      <h2>Message Preview</h2>
+      <div id="preview">
+        Enter candidate details to see the message.
+      </div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
